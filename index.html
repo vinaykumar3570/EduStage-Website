@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>EduStage - Best online education service in the world</title>
+
+   <!-- Bootstrap CDN -->
+   <link rel="stylesheet" href="Bootstrap/Bootstrap.css">
+   <script src="Bootstrap/Bootstrap_js_bundle.js"></script>
+
+   <!-- fontAwesome Link -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+
+   <!-- Animate on Style -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <style>
+      *{
+         box-sizing: border-box;
+      }
+      header {
+         background-image: url("Images/header.jpg");
+         background-position: center center;
+         background-size: cover;
+         background-repeat: no-repeat;
+         min-height: 800px;
+      }
+
+      :root {
+         --bs-primary: #000020;
+         --bs-primary-rgb: #000020;
+      }
+
+      .btn-primary {
+         background-color: var(--bs-primary);
+         border-color: var(--bs-primary);
+      }
+
+      .btn-primary:hover {
+         background-color: #000033;
+         border-color: #000033;
+      }
+
+      .btn-primary:focus,
+      .btn-primary:active {
+         background-color: #000020;
+         border-color: #000020;
+      }
+
+      .bg-dark-grey {
+         background: #dce5e7;
+      }
+
+      .bg-tertiary {
+         background: #052049;
+      }
+      .nav-link{
+         transition: all .3s;
+      }
+      .nav-link.active{
+         color: rgb(255, 153, 0) !important;
+      }
+      .nav-link:hover{
+         color: rgb(255, 153, 0) !important;
+      }
+
+      input {
+         outline: none;
+      }
+
+      #gototop {
+         height: 50px;
+         width: 50px;
+         background: #cacaca;
+         color: rgb(29, 29, 29);
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         position: fixed;
+         bottom: 10%;
+         right: 5%;
+         z-index: 5;
+         border-radius: 5px;
+         font-size: 20px;
+         border: none;
+         /* font-weight: 600; */
+      }
+      a{
+         text-decoration: none;
+      }
+      .card{
+         transition: all .4s;
+      }
+      .card:hover{
+        transform: scale(1.02);
+      }
+      a.social-icon{
+         color: #727272 ;
+         transition: .5s;
+      }
+      a.social-icon:hover{
+         color: orange !important;  
+      }
+   </style>
+
+</head>
+
+<body onscroll="scrollFunction()">
+
+   <a href="#top" id="gototop">
+      <!-- <i class="fas fa-arrow-up"></i> -->
+       <!-- &uarr; -->
+        &#9650;
+   </a>
+
+   <!-- Header Starts  -->
+   <header>
+      <!-- Navbar Starts  -->
+      <nav class="navbar navbar-expand-lg navbar-light px-md-5 px-2 z-3" id="hero">
+         <div class="container-fluid">
+            <a class="navbar-brand fs-2 fw-bold text-primary" href="#" data-aos="fade-right"
+               data-aos-duration="900">edustage</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+               data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+               aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item" data-aos="fade-up" data-aos-duration="300">
+                     <a href="#hero" class="nav-link active fw-bold ms-lg-5 text-center text-primary text-capitalize "
+                        aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-up" data-aos-duration="600">
+                     <a href="#features" class="nav-link fw-bold ms-lg-5 text-center text-primary text-capitalize ">Features</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-up" data-aos-duration="900">
+                     <a href="#courses" class="nav-link fw-bold ms-lg-5 text-center text-primary text-capitalize ">Courses</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-up" data-aos-duration="1200">
+                     <a href="#trainers" class="nav-link fw-bold ms-lg-5 text-center text-primary text-capitalize ">Trainers</a>
+                  </li>
+                  <li class="nav-item" data-aos="fade-up" data-aos-duration="1500">
+                     <a href="#events" class="nav-link fw-bold ms-lg-5 text-center text-primary text-capitalize ">Events</a>
+                  </li>
+                  <!-- <li class="nav-item d-flex align-items-center justify-content-center ">
+                     <i class="fas fa-search ms-lg-5"></i>
+                  </li> -->
+               </ul>
+            </div>
+         </div>
+      </nav>
+
+      <!-- Hero Section Starts -->
+      <div class="container-md hero" style="padding:100px 0;">
+         <div class="row p-4 py-5 ">
+            <div class="col-12 text-primary">
+               <h6 class="fw-bold text-uppercase text-center" data-aos="fade-up" data-aos-duration="500"> Best online
+                  education service in the world </h6>
+               <h2 class="fs-1 py-2 text-uppercase text-center mb-4" data-aos="fade-up" data-aos-duration="500"> One
+                  Step ahead this season </h2>
+               <div class="text-center">
+                  <a href="#events" class="fw-semibold py-2 px-4 btn btn-primary rounded-0 text-uppercase m-2 mb-2"
+                     data-aos="fade-right" data-aos-duration="500"> Check Events
+                  </a>
+                  <a href="#courses"
+                     class="fw-bold py-2 px-4 btn btn-warning text-primary rounded-0 text-uppercase m-2 mb-2"
+                     data-aos="fade-left" data-aos-duration="500"> see
+                     course
+                  </a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </header>
+
+   <!-- Feature Section -->
+   <section class="features py-5" id="features">
+      <div class="container-md text-primary text-center">
+         <h2 class="fw-bold" data-aos="fade-left"> Awesome Feature </h2>
+         <p class="fst-italic mb-5" data-aos="fade-right"> Replenish man have thing gathering lights yielding shall you
+         </p>
+
+         <div class="row card-containe text-start">
+            <div class="col-sm-4 mb-4" data-aos="fade-right">
+               <div class="card p-4 bg-light border-0 rounded-0">
+                  <img src="Images/icons/graduate-hat.png" alt="" width="50px">
+                  <h5 class="fw-bold my-3"> Scholarship Support </h5>
+                  <p> Get access to scholarship opportunities that help make quality education more affordable. </p>
+               </div>
+            </div>
+            <div class="col-sm-4 mb-4" data-aos="fade-down">
+               <div class="card p-4 bg-light border-0 rounded-0">
+                  <img src="Images/icons/open-book.png" alt="" width="50px">
+                  <h5 class="fw-bold my-3"> Expert Led Course </h5>
+                  <p> Learn practical skills from experienced instructors through structured, industry-focused courses.  </p>
+               </div>
+            </div>
+            <div class="col-sm-4 mb-4" data-aos="fade-left">
+               <div class="card p-4 bg-light border-0 rounded-0">
+                  <img src="Images/icons/foreign.png" alt="" width="50px">
+                  <h5 class="fw-bold my-3"> Global Certification </h5>
+                  <p> Earn recognized certificates that showcase your skills and strengthen your professional profile. </p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Courses Section -->
+   <section class="courses py-5" id="courses">
+      <div class="container-md text-primary text-center">
+         <h2 class="fw-bold" data-aos="fade-up"> Our Popular Courses </h2>
+         <p class="fst-italic mb-5" data-aos="fade-up" data-aos-duration="500"> Replenish man have thing gathering
+            lights yielding shall you</p>
+
+         <div class="card-container row text-start">
+            <div class="col-sm-4 px-4 mb-4" data-aos="fade-right">
+               <div class="card rounded-0 bg-light">
+                  <div class="card-image position-relative">
+                     <img src="Images/course1.jpg" alt="" width="100%">
+                     <span class="price bg-warning rounded-5 p-2 position-absolute top-100 end-0 fw-bold fs-5"
+                        style="transform: translate(-30%, -50%); height:50px;"> $25 </span>
+                  </div>
+                  <div class="card-body">
+                     <div class="box d-inline-block fw-bolder rounded-1">HTML &middot;</div> 
+                     <div class="box d-inline-block fw-bolder rounded-1">CSS &middot;</div> 
+                     <div class="box d-inline-block fw-bolder rounded-1">JS</div> 
+                     <h5 class="fw-bold my-3"> Frontend Development </h5>
+                     <p> Build modern, responsive websites and learn fundamentals of HTML, CSS, and JavaScript.</p>
+                     <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                           <img src="Images/trainer1.jpg" class="rounded-5 object-fit-cover" alt="" width="40px">
+                           <p class="d-inline fw-semibold ms-2">Cameron</p>
+                        </div>
+                        <div class="col-3">
+                           <i class="fas fa-user"></i> 25
+                        </div>
+                        <div class="col-3">
+                           <i class="fas fa-heart"></i> 35
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-sm-4 px-4 mb-4" data-aos="fade-up">
+               <div class="card rounded-0 bg-light">
+                  <div class="card-image position-relative">
+                     <img src="Images/course2.jpg" alt="" width="100%">
+                     <span class="price bg-warning rounded-5 p-2 position-absolute top-100 end-0 fw-bold fs-5"
+                        style="transform: translate(-30%, -50%); height:50px;"> $25 </span>
+                  </div>
+                  <div class="card-body">
+                     <div class="box d-inline-block fw-bolder rounded-1">Photoshop &middot;</div> 
+                     <div class="box d-inline-block fw-bolder rounded-1">Illustrator</div> 
+                     <h5 class="fw-bold my-3"> Graphic Design </h5>
+                     <p> Learn professional design techniques and create stunning graphics using Photoshop and Illustrator. </p>
+                        <div class="row d-flex align-items-center">
+                           <div class="col-6">
+                              <img src="Images/trainer2.jpg" class="rounded-5 object-fit-cover" alt="" width="40px">
+                              <p class="d-inline fw-semibold ms-2">Cameron</p>
+                           </div>
+                           <div class="col-3">
+                              <i class="fas fa-user"></i> 25
+                           </div>
+                           <div class="col-3">
+                              <i class="fas fa-heart"></i> 35
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-4 px-4 mb-4" data-aos="fade-left">
+                  <div class="card rounded-0 bg-light">
+                     <div class="card-image position-relative">
+                        <img src="Images/course3.jpg" alt="" width="100%">
+                        <span class="price bg-warning rounded-5 p-2 position-absolute top-100 end-0 fw-bold fs-5"
+                        style="transform: translate(-30%, -50%); height:50px;"> $25 </span>
+                     </div>
+                     <div class="card-body">
+                     <div class="box d-inline-block fw-bolder rounded-1">SEO &middot;</div> 
+                     <div class="box d-inline-block fw-bolder rounded-1">Analytics</div> 
+                     <h5 class="fw-bold my-3"> Digital Marketing </h5>
+                     <p> Master SEO, analytics, and digital strategies to grow brands and reach the right audience online.  </p>
+                     <div class="row d-flex align-items-center">
+                        <div class="col-6">
+                           <img src="Images/trainer3.jpg" class="rounded-5 object-fit-cover" alt="" width="40px">
+                           <p class="d-inline fw-semibold ms-2">Cameron</p>
+                        </div>
+                        <div class="col-3">
+                           <i class="fas fa-user"></i> 25
+                        </div>
+                        <div class="col-3">
+                           <i class="fas fa-heart"></i> 35
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Register Section Starts -->
+   <section class="register bg-tertiary py-5">
+      <div class="container-md py-5 text-light">
+         <div class="row">
+            <div class="col-md-8 fw-semibold p-0 mb-4 pe-5 ps-2">
+               <h2 class="mb-3 fs-1" data-aos="fade-up"> Register Now </h2>
+               <p class=" pb-5 fs-5 fw-light" data-aos="fade-up"> There is a moment in the life of any aspiring astronomer that it is time to buy
+                  that first telescope. It's exciting to think about setting up your own viewing station. </p>
+               <div class="d-flex justify-content-between flex-wrap">
+                  <span class="py-4 px-4 rounded-2 m-1" style="background: rgba(255, 255, 255, 0.18); border: 1px solid #8b8b8b; min-width: 130px;" data-aos="fade-up" data-aos-duration="100">
+                     <span class="fs-2 fw-bold">150</span>
+                     <p class="d-inline fw-normal text-capitalize">days</p>
+                  </span>
+                  <span class="py-4 px-4 rounded-2 m-1" style="background: rgba(255, 255, 255, 0.18); border: 1px solid #8b8b8b; min-width: 130px;" data-aos="fade-up" data-aos-duration="200">
+                     <span class="fs-2 fw-bold">23</span>
+                     <p class="d-inline fw-normal text-capitalize">hours</p>
+                  </span>
+                  <span class="py-4 px-4 rounded-2 m-1" style="background: rgba(255, 255, 255, 0.18); border: 1px solid #8b8b8b; min-width: 130px;" data-aos="fade-up" data-aos-duration="300">
+                     <span class="fs-2 fw-bold">47</span>
+                     <p class="d-inline fw-normal text-capitalize">mins</p>
+                  </span>
+                  <span class="py-4 px-4 rounded-2 m-1" style="background: rgba(255, 255, 255, 0.18); border: 1px solid #8b8b8b; min-width: 130px;" data-aos="fade-up" data-aos-duration="400">
+                     <span class="fs-2 fw-bold">56</span>
+                     <p class="d-inline fw-normal text-capitalize">secs</p>
+                  </span>
+               </div>
+            </div>
+            <div class="col-md-4 p-0 mt-4">
+               <div class="card text-center px-2 px-lg-5 py-4" style="width: 95%; margin: 0 auto" data-aos="fade-up">
+                  <h3 class="mb-0"> Courses for Free </h3>
+                  <p> It is high time for learning. </p>
+                  <form action="#" class="d-flex flex-column align-items-center">
+                     <input type="text" placeholder="Your Name"
+                        class="p-2 d-block mt-4 border-top-0 border-start-0 border-end-0 border bg-light"
+                        style="width:100%;">
+                     <input type="tel" placeholder="Your Phone Number"
+                        class="p-2 d-block mt-4 border-top-0 border-start-0 border-end-0 border bg-light"
+                        style="width:100%;">
+                     <input type="email" placeholder="Your Email Address"
+                        class="p-2 d-block mt-4 border-top-0 border-start-0 border-end-0 border bg-light"
+                        style="width:100%;">
+                     <input type="submit" value="Submit" style="width:100%;"
+                        class="mt-4 mb-4 btn btn-warning rounded-0 text-primary text-uppercase fw-semibold d-block">
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Trainer Section -->
+   <section class="trainer py-5" id="trainers">
+      <div class="container-md text-primary text-center">
+         <h2 class="fw-bold" data-aos="fade-up"> Our Expert Trainers </h2>
+         <p class="fst-italic mb-5" data-aos="fade-up" data-aos-duration="500"> Replenish man have thing gathering lights yielding shall you</p>
+
+         <div class="card-container row text-start">
+            <div class="col-md-3 col-sm-6 mb-3" data-aos="fade-up" data-aos-duration="200">
+               <div class="card">
+                  <div class="car-image">
+                     <img src="Images/trainer1.jpg" alt="" width="100%">
+                  </div>
+                  <div class="card-title text-center my-3">
+                     <h4 class="fw-bold mb-0"> Anurag </h4>
+                     <p class="fw-semibold text-secondary"> Jr. web designer </p>
+                  </div>
+                  <div class="card-body text-center px-2">
+                     <p> If you are looking at blank cassettes on the web, you may be very confused </p>
+                  </div>
+                  <span class="mx-auto mb-4">
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-facebook-f"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-twitter"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-linkedin-in"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-pinterest"></i></a>
+                  </span>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3" data-aos="fade-up" data-aos-duration="400">
+               <div class="card">
+                  <div class="car-image">
+                     <img src="Images/trainer2.jpg" alt="" width="100%">
+                  </div>
+                  <div class="card-title text-center my-3">
+                     <h4 class="fw-bold mb-0"> Mated Nithan </h4>
+                     <p class="fw-semibold text-secondary"> Sr. web designer </p>
+                  </div>
+                  <div class="card-body text-center px-2">
+                     <p> If you are looking at blank cassettes on the web, you may be very confused </p>
+                  </div>
+                  <span class="mx-auto mb-4">
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-facebook-f"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-twitter"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-linkedin-in"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-pinterest"></i></a>
+                  </span>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3" data-aos="fade-up" data-aos-duration="600">
+               <div class="card">
+                  <div class="car-image">
+                     <img src="Images/trainer3.jpg" alt="" width="100%">
+                  </div>
+                  <div class="card-title text-center my-3">
+                     <h4 class="fw-bold mb-0"> Jiya Alex </h4>
+                     <p class="fw-semibold text-secondary"> Graphic designer </p>
+                  </div>
+                  <div class="card-body text-center px-2">
+                     <p> If you are looking at blank cassettes on the web, you may be very confused </p>
+                  </div>
+                  <span class="mx-auto mb-4">
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-facebook-f"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-twitter"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-linkedin-in"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-pinterest"></i></a>
+                  </span>
+               </div>
+            </div>
+            <div class="col-md-3 col-sm-6 mb-3" data-aos="fade-up" data-aos-duration="800">
+               <div class="card">
+                  <div class="car-image">
+                     <img src="Images/trainer4.jpg" alt="" width="100%">
+                  </div>
+                  <div class="card-title text-center my-3">
+                     <h4 class="fw-bold mb-0"> Jack Smith </h4>
+                     <p class="fw-semibold text-secondary"> Digital Marketing Expert </p>
+                  </div>
+                  <div class="card-body text-center px-2">
+                     <p> If you are looking at blank cassettes on the web, you may be very confused </p>
+                  </div>
+                  <span class="mx-auto mb-4">
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-facebook-f"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-twitter"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-linkedin-in"></i></a>
+                     <a href="#" class="social-icon"><i class="mx-1 fab fa-pinterest"></i></a>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Event Section -->
+   <section class="Event py-5 bg-tertiary text-light" id="events">
+      <div class="container-lg text-primary text-center">
+         <h2 class="fw-bold mt-5" data-aos="fade-up">Upcoming Events </h2>
+         <p class="fst-italic mb-5 text-secondary" data-aos="fade-up" data-aos-duration="500"> Replenish man have thing gathering lights yielding shall you</p>
+
+         <div class="card-container row text-start mb-5">
+
+            <div class="col-md-6 p-3">
+               <div class="rounded-0 position-relative" data-aos="fade-up">
+                  <img src="Images/course4.jpg" class="object-fit-cover" alt="" width="100%" height="420px">
+                  <div class="box p-4 position-absolute top-0 end-0"
+                     style="width: 300px;background: rgba(0, 0, 0, 0.397);">
+                     <div class="row">
+                        <!-- <div class="col-4"></div> -->
+                        <div class="col-3 border-end border-3">
+                           <h6 class="mb-0 fs-3 fw-bold text-warning"> 15 </h6>
+                           <p class="fs-5 fw-medium mb-0">Jun</p>
+                        </div>
+                        <div class="col-9">
+                           <div class="time mb-2">
+                              <i class="far fa-clock"></i>
+                              12:00 AM - 12:30 AM
+                           </div>
+                           <div class="location">
+                              <div class="fas fa-location-dot"></div>
+                              Hilton Quebec
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-12 mt-4">
+                           <p class="fw-medium"> One make creepeth man far so bearing their firmament won't feal meat
+                              over seas great.</p>
+                           <Button class="btn btn-warning rounded-0 text-uppercase fw-medium px-3 py-2"> view details
+                           </Button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 p-3">
+               <div class="rounded-0 position-relative" data-aos="fade-up" data-aos-duration="600">
+                  <img src="Images/course3.jpg" class="object-fit-cover" alt="" width="100%" height="420px">
+                  <div class="box p-4 position-absolute top-0 end-0"
+                     style="width: 300px;background: rgba(0, 0, 0, 0.397);">
+                     <div class="row">
+                        <div class="col-3 border-end border-3">
+                           <h6 class="mb-0 fs-3 fw-bold text-warning"> 15 </h6>
+                           <p class="fs-5 fw-medium mb-0">Jun</p>
+                        </div>
+                        <div class="col-9">
+                           <div class="time mb-2">
+                              <i class="far fa-clock"></i>
+                              12:00 AM - 12:30 AM
+                           </div>
+                           <div class="location">
+                              <div class="fas fa-location-dot"></div>
+                              Hilton Quebec
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-12 mt-4">
+                           <p class="fw-medium"> One make creepeth man far so bearing their firmament won't feal meat
+                              over seas great.</p>
+                           <Button class="btn btn-warning rounded-0 text-uppercase fw-medium px-3 py-2"> view details
+                           </Button>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- <a href="#events" class="pt-5 text-uppercase text-warning"> View all events &rarr; </a> -->
+      </div>
+   </section>
+
+   <!-- Clients Section  -->
+   <section class="Event py-5">
+      <div class="container-lg text-primary text-center">
+         <h2 class="fw-bold mt-5">Client say about me </h2>
+         <p class="fst-italic mb-5 text-secondary"> Replenish man have thing gathering lights yielding shall you</p>
+
+         <div class="row">
+            <div class="col-md-6 mb-3">
+               <div class="card rounded-0 p-4 border-0 shadow">
+                  <div class="row">
+                     <div class="col-sm-4">
+                        <img src="Images/trainer3.jpg" alt="" width="100%">
+                     </div>
+                     <div class="col-sm-8 text-start">
+                        <h5 class="fw-bold pt-sm-0 pt-3">Elite Martin</h5>
+                        <p class="pe-md-5 fw-medium text-secondary">Him, made can't called over won't there on divide
+                           there male fish beast own his day third seed sixth seas into. Saw form .</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-6 mb-3">
+               <div class="card rounded-0 p-4 border-0 shadow">
+                  <div class="row">
+                     <div class="col-sm-4">
+                        <img src="Images/trainer1.jpg" alt="" width="100%">
+                     </div>
+                     <div class="col-sm-8 text-start">
+                        <h5 class="fw-bold pt-sm-0 pt-3">Davil Saden</h5>
+                        <p class="pe-md-5 fw-medium text-secondary">Him, made can't called over won't there on divide
+                           there male fish beast own his day third seed sixth seas into. Saw form .</p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="d-flex justify-content-center">
+            <div class="arrow d-flex mt-5 mx-auto">
+               <span class="dot d-block bg-warning mx-2 rounded-5" style="width:15px;height:15px;"></span>
+               <span class="dot d-block bg-secondary mx-2 rounded-5" style="width:15px;height:15px;"></span>
+               <span class="dot d-block bg-secondary mx-2 rounded-5" style="width:15px;height:15px;"></span>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Footer Starts Here  -->
+   <footer class="bg-tertiary p-md-5 py-5">
+      <div class="container-md">
+         <div class="row">
+            <div class="col-md-4">
+               <div class="row">
+                  <div class="col-6 mb-5">
+                     <h5 class="text-light mb-4"> Top Products </h5>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Managed Website</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Manage Reputation </a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Power Tools</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Marketing Service</a>
+                  </div>
+                  <div class="col-6 mb-5">
+                     <h5 class="text-light mb-4"> Quick Links </h5>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Job</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Brand Assets</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Investor Relations</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Terms of Service</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <div class="row">
+                  <div class="col-6 mb-5">
+                     <h5 class="text-light mb-4"> Features </h5>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Managed Website</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Manage Reputation </a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Power Tools</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Marketing Service</a>
+                  </div>
+                  <div class="col-6 mb-5">
+                     <h5 class="text-light mb-4"> Resources </h5>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Guides</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Research</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Experts</a>
+                     <a href="#" class="text-decoration-none text-secondary mb-3 d-block">Agencies</a>
+                  </div>
+               </div>
+            </div>
+            <div class="col-md-4">
+               <h5 class="text-light mb-4"> Newsletter </h5>
+               <p class="text-decoration-none text-secondary mb-3">You can trust us. we send only promo offers.</p>
+               <form action="#" class="d-felx align-items-center">
+                  <input type="email" placeholder="Your Email Address" class="px-2 py-2 text-light border-0 mb-3"
+                     style="height: 100%; background: rgba(105, 105, 105, 0.5);">
+                  <input type="submit" class="btn btn-warning text-uppercase rounded-0 fw-bold border-0"
+                     value="subscribe">
+               </form>
+            </div>
+         </div>
+         <div class="row text-light mt-5">
+            <div class="col-md-8 mb-3">
+               <p>Copyright &copy; 2023 All right reserved | This template is made with Love by <span
+                     class="text-warning">Vinay Kumar </span>. Distributed by <span class="text-warning">Arena
+                     Animation</span></p>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+               <span>
+                  <i style="width: 30px; height: 30px; background: rgba(219, 219, 219, 0.2); color:#c8c8c8"
+                     class=" p-2 fab fa-facebook-f"></i>
+                  <i style="width: 30px; height: 30px; background: rgba(219, 219, 219, 0.2); color:#c8c8c8"
+                     class=" p-2 fab fa-twitter"></i>
+                  <i style="width: 30px; height: 30px; background: rgba(219, 219, 219, 0.2); color:#c8c8c8"
+                     class=" p-2 fab fa-pinterest-p"></i>
+                  <i style="width: 30px; height: 30px; background: rgba(219, 219, 219, 0.2); color:#c8c8c8"
+                     class=" p-2 fab fa-linkedin-in"></i>
+               </span>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   <script>
+      
+      // On scroll navbar color change
+      function scrollFunction() {
+         if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+            document.getElementById("gototop").style.display = "flex";
+         } else {
+            document.getElementById("gototop").style.display = "none";
+         }
+      }
+      scrollFunction();
+      
+      AOS.init();
+      </script>
+</body>
+
+</html>
